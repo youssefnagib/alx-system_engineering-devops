@@ -1,2 +1,2 @@
 #!/bin/bash
-chmod --recursive 711 
+chmod --recursive +x .
