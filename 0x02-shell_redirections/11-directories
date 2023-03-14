@@ -1,2 +1,2 @@
 #!/bin/bash
-wc stats
+find . mindepth 1 -type d | wc -1
