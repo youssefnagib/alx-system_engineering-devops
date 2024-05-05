@@ -2,7 +2,7 @@
 # hours and min
 hours=0
 minutes=0
-echo hour: 0
+echo Hour: 0
 while ((hours <= 12))
 do
 ((minutes++))
