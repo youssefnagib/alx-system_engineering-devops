@@ -8,9 +8,14 @@ do
 ((minutes++))
 if ((minutes % 60 == 0))
 then
-((hours++))
-echo Hour: $hours
-minutes=1
+    ((hours++))
+     minutes=1
+    if ((hours <= 12))
+    then
+        echo Hour: $hours
+    else
+        break
+    fi
 fi
 echo $minutes
 done
