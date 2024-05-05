@@ -9,7 +9,7 @@ do
 if ((minutes % 60 == 0))
 then
 ((hours++))
-echo hour: $hours
+echo Hour: $hours
 minutes=1
 fi
 echo $minutes
