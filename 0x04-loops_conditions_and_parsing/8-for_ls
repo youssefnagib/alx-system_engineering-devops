@@ -2,5 +2,5 @@
 #displays: The content of directory
 
 for file in *; do
- echo "$file" | cut -b 3-100 
+ echo "$file" | cut -b 3- 
  done
