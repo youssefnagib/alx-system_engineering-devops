@@ -5,4 +5,4 @@ sudo ufw default allow outgoing
 sudo uwf allow 22
 sudo uwf allow 80
 sudo uwf allow 443
-sudo ufw enable
+sudo ufw enable -y
