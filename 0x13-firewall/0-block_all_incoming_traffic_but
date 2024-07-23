@@ -5,5 +5,5 @@ sudo ufw default allow outgoing
 sudo uwf allow 22/tcp
 sudo uwf allow 80/tcp
 sudo uwf allow 443/tcp
-sudo ufw enable -y
+sudo ufw enable
 sudo ufw status
