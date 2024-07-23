@@ -6,6 +6,8 @@
 #   ufw-before-input
 #   ufw-before-output
 #   ufw-before-forward
+#
+
 # Allow port forwarding from port 8080/TCP to port 80/TCP
 *nat
 :PREROUTING ACCEPT [0:0]
