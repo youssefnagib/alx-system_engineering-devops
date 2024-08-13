@@ -40,15 +40,15 @@ if __name__ == '__main__':
     completed_tasks = [task for task in todos if task['completed']]
     number_of_completed_tasks = len(completed_tasks)
 
-    tasks =[]
+    tasks = []
     for task in todos:
         task_dict = {
-            "tasks": task['title'],
+            "task": task['title'],
             "completed": task['completed'],
             "username": employee_name
         }
         tasks.append(task_dict)
-    data = {str(employee_id): task}
+    data = {str(employee_id): tasks}
 
     file_name = "{}.json".format(employee_id)
     with open(file_name, 'w') as outfile:
