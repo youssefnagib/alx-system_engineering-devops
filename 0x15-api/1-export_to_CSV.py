@@ -27,7 +27,7 @@ if __name__ == '__main__':
         sys.exit(1)
 
     user_data = user_response.json()
-    employee_name = user_data['name']
+    employee_name = user_data['username']
     todos_url = "{}/todos?userId={}".format(base_url, employee_id)
     todos_response = requests.get(todos_url)
     if todos_response.status_code != 200:
