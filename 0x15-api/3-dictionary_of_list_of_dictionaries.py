@@ -7,7 +7,6 @@ import sys
 if __name__ == '__main__':
     base_url = "https://jsonplaceholder.typicode.com"
 
-
     users_url = "{}/users".format(base_url)
     users_response = requests.get(users_url)
     if users_response.status_code != 200:
@@ -21,7 +20,7 @@ if __name__ == '__main__':
     if todos_response.status_code != 200:
         print("Error: Unable to retrieve TODO list.")
         sys.exit(1)
-    
+
     todos = todos_response.json()
 
     data = {}
